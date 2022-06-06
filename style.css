@@ -1,0 +1,135 @@
+*{
+  margin : 0;
+  padding: 0;
+}
+.header
+{
+  height : 8vh;
+}
+.navbar-style
+{
+  box-shadow: 0 5px 10px #efefef;
+}
+.logo
+{
+   height : 78px;
+   padding: 2px 0px;
+}
+.icon-bar
+{
+  background: darkorange;
+}
+.big-text
+{
+  color: darkorange;
+}
+a.btn
+{
+  margin : 30px 10px;
+  width: 175px;
+  padding: 10px;
+  border-radius: 20px;
+}
+a.btn-first
+{
+   background-color: darkorange;
+   color: white;
+}
+a.btn-second
+{
+  background: transparent;
+  border: 1px solid darkorange;
+  color: #333;
+}
+a.btn:hover
+{
+  background: darkorange;
+  border: none;
+  color: #fff;
+  box-shadow: 5px 5px 10px #999;
+  transition: 0.3s;
+}
+body
+{
+  background: "white";
+}
+.col-sm-6
+{
+  display: flex;
+  align-items: left;
+  flex-direction:column;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+.row
+{
+  display:flex;
+  flex-direction:column;
+
+}
+
+.buttons
+{
+  display: flex;
+  flex-direction: row;
+}
+.wrapper
+{
+   width: 450px;
+   padding: 30px;
+   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+}
+.wrapper .input-data
+{
+  height: 20px;
+  width: 100%;
+
+}
+.wrapper .input-data input
+{
+  height: 100%;
+  width: 100%;
+  border:none;
+  font-size: 17px;
+  border-bottom: 1px solid grey;
+}
+.input-data input:focus ~label,
+.input-data input:valid ~label
+{
+  transform: translateY(0);
+  font-size: 15px;
+  color: black;
+}
+.wrapper .input-data label
+{
+
+  bottom:10px;
+  left: 0;
+  color: black;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper .input-data .underline
+{
+
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before
+{
+
+  content:"";
+  height:100%;
+  width:100%;
+  background: #4158d0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before
+.input-data input:valid ~ .underline:before
+{
+  transform: scaleX(1);
+}
